@@ -1,0 +1,99 @@
+/* Name: Stacy Cappelloni 
+Course number and section: CPSC 458-01 
+Assignment or exercise number: Mastery Project 2: Personal Portfolio Site
+This file provides styles for the showcase web page, that may or may not be desired when using 
+the Modern Tech framework for other web pages. */
+
+.project-grid {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: start;
+  }
+  
+  .art-grid {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0px;
+  }
+  
+  .art-grid li figure {
+    flex: 1;
+    min-width: 150px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .project-grid li {
+    border-radius: 5px;
+    padding: 25px;
+    padding-top: 0;
+    border: double 10px #00f7ff;
+    box-shadow: 2.5px 2.5px 25px #008086;
+    margin: 0;
+    width: 100ch;
+    flex: 1;
+  }
+  
+  @media (max-width: 415px) {
+    .project-grid li {
+      max-width: 50ch;
+    }
+  
+    h3 {
+      font-size: clamp(1.35rem, 7vw, 1.75rem);
+    }
+  }
+  .top-grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #headshot {
+    margin: 0px;
+    max-width: 340px;
+  }
+  
+  .fast-facts {
+    border-radius: 5px;
+    padding: 15px;
+    border: double 10px #00f7ff;
+    box-shadow: 2.5px 2.5px 25px #008086;
+    width: fit-content;
+    height: fit-content;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 25px;
+  }
+  
+  .icon {
+    border: 0px;
+    margin: 0px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px #008086;
+    height: 50px;
+    transition: all 0.3s;
+  }
+  
+  .icon-btn {
+    padding: 0px;
+    color: transparent;
+    border: 0px;
+    background-color: transparent;
+  }
+  
+  .icon:hover {
+    transform: translateY(-4px);
+  }
+  
